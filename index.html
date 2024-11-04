@@ -1,140 +1,186 @@
 <!doctype html>
-<html lang="en">
+<html class="z-depth-2" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>7th Pixel Consulting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7th Pixel Consulting</title>
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="css/materialize.css"/>
-    <link rel="stylesheet" href="css/materialize.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+        <!-- Google Icon Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Silkscreen:wght@400;700&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="index.css" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- jQuery CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
 
+        <!-- Materialize CDN here -->
+        <!-- Compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+        <style>
+            footer a {
+                text-decoration: underline;
+            }
+            .brand-logo {
+                margin-left: 10px;
+            }
 
-    <meta charset="UTF-8">
-    <title> Sprint 2 </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+            .parallax img {
+                width: 100%;
+                height: 20vh;
+            }
 
-    <!-- Google Icon Font/jQuery CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-
-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    <!-- Materialize CDN here -->
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-  <style>
-        .brand-logo {
-            margin-left: 10px;
-        }
-
-        .parallax img {
-            width: 100%;
-            height: 20vh
-        }
-
-        img.activator {
-            height: 200px
-        }
-
-    </style>
-    <!-- JavaScript/jQuery Function Initialization inside <script> </script> -->
-    <script>
-        $(document).ready(function() {
-            $('.sidenav').sidenav();
-
-            $('.parallax').parallax();
-            $('.slider').slider({
-                indicators: false,
-                height: 500,
-                interval: 5000
+            img.activator {
+                height: 200px;
+            }
+        </style>
+        <!-- JavaScript/jQuery Function Initialization inside <script> </script> -->
+        <script>
+            $(document).ready(function () {
+                $(".sidenav").sidenav();
+                $(".parallax").parallax();
+                $(".collapsible").collapsible();
+                $(".slider").slider({
+                    indicators: false,
+                    height: 500,
+                    interval: 5000
+                });
             });
-        });
+        </script>
+    </head>
 
-    </script>
-</head>
+    <body>
+        <nav>
+            <div class="nav-wrapper #3f51b5 indigo darken-1">
+                <div class="container">
+                    <a
+                        href="#!"
+                        class="brand-logo yellow-text text-darken-3"
+                        style="font-family: Silkscreen; font-size: 1.30rem;"
+                        >7th Pixel Consulting</a
+                    >
+                    <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
+                        ><i class="material-icons">menu</i></a
+                    >
+                    <ul style="font-family: Silkscreen;" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<body>
-    <div class="wrapper">
-        <!-- Header Section with Navigation -->
-        <header>
-            <img src="images/7thPixelLogocopy.png" alt="7th Pixel Logo" id="logo" height="100px" width="100px"/>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="current">Home</a></li>
-                    <li><a href="info.html">Info</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="slider">
-        <ul class="slides">
-            <li>
-                <img src="images/sprintimg1.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                    <h3>Professional Opinions</h3>
-                    
-                </div>
-            </li>
-            <li>
-                <img src="images/sprintimg2.jpg"> <!-- random image -->
-                <div class="caption left-align">
-                    <h3>Excellent Reviews</h3>
-               
-                </div>
-            </li>
-            <li>
-                <img src="images/sprintimg3.jpeg"> <!-- random image -->
-                <div class="caption right-align">
-                    <h3>Top Tier Analysis</h3>
-                   
-                </div>
-            </li>
-            <li>
-                <img src="images/springimg4.jpeg"> <!-- random image -->
-                <div class="caption center-align">
-                    <h3>7th Pixel</h3>
-                    
-                </div>
-            </li>
+        <ul style="font-family: Silkscreen;" class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
-    </div>
+
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="images/sprintimg1.jpg" />
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>Professional Opinions</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/sprintimg2.jpg" />
+                    <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Excellent Reviews</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/sprintimg3.jpeg" />
+                    <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Top Tier Analysis</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/springimg4.jpeg" />
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3 style="font-family: Silkscreen;">7th Pixel</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
         <!-- Main Content Section -->
         <section id="opening">
             <article>
-                <h2 id="open" class="center-align">Welcome to 7th Pixel!</h2>
-                <h3 id="expert" class="center-align">An expert guide to gaming</h3>
+                <h2 class="center-align">Welcome to 7th Pixel!</h2>
+                <h3 style="color: #F72585; font-weight: 800;" class="center-align">An expert guide to gaming</h3>
             </article>
 
-            <article id="homecontent">
-                <h3 id="help">We're here to help YOU</h3>
-                <p>
-                    At 7th Pixel, we blend our passion for technology with a deep understanding of gaming to bring you the best recommendations from the last few years. Whether you're a casual player or a hardcore enthusiast, our experts stay ahead of the curve to highlight the most innovative, immersive, and exciting games across all platforms. From breathtaking open worlds to heart-pounding multiplayer experiences, 7th Pixel is your trusted guide to discovering the games that define the era.
+            <article class="center-align">
+                <h3 style="font-weight: 800;">We're here to help YOU</h3>
+                <p style="margin-left: 9vw; margin-right: 9vw;">
+                    At 7th Pixel, we blend our passion for technology with a deep understanding of gaming to bring you
+                    the best recommendations from the last few years. Whether you're a casual player or a hardcore
+                    enthusiast, our experts stay ahead of the curve to highlight the most innovative, immersive, and
+                    exciting games across all platforms. From breathtaking open worlds to heart-pounding multiplayer
+                    experiences, 7th Pixel is your trusted guide to discovering the games that define the era.
                 </p>
             </article>
         </section>
-        
+
         <!-- Footer Section -->
-        <footer>&copy; 2024 7th Pixel</footer>
-    </div>
-</body>
-
+        <footer class="page-footer indigo darken-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h6><a class="white-text" href="#top">Back to top</a></h6>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Connect With Us</h5>
+                        <p class="grey-text text-lighten-4">
+                            Join our community on social media to keep up with the latest news, updates, and exclusive
+                            content!
+                        </p>
+                        <ul>
+                            <li>
+                                <a
+                                    class="grey-text text-lighten-3"
+                                    href="https://miamioh.edu/cca/departments/emerging-technology-in-business-and-design/index.html"
+                                    >ETBD</a
+                                >
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="https://x.com/MiamiOH_ETBD">Twitter</a></li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="https://www.instagram.com/miamioh_etbd/"
+                                    >Instagram</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2024 7th Pixel Consulting, All Rights Reserved
+                    <a class="grey-text text-lighten-4 right" href="#!"
+                        ><img src="images/7thPixelLogocopy.png" width="30px"/></a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
-
