@@ -12,70 +12,26 @@ figcaption {
 body {
     font-family: Lexend, Times, sans-serif;
     line-height: 1.4em;
-    margin: 0px;
-    background-image: url(images/backgroundcopy.png)
 }
 
 #logo {
     width: 100px;
 }
 
-.wrapper {
-    width: 940px;
-    background-color: #afbbce;
-    margin: 20px auto;
-    border: 2px solid #fabc2a;
-}
 
 ul li {
     display: inline;
-    margin-right: 40px;
+    margin-right: 30px;
 
 }
 
-nav,
-footer {
-    clear: both;
-    background-color: #323B57;
-    height: 30px;
-    color: white
-}
-
-nav ul {
-
-    margin-top: -7px
-}
-
-nav li a {
-
-    color: white
-}
-
-nav li a:hover,
-.current {
-    color: #4361EE
-}
 
 a {
     text-decoration: none;
-    color: #4361EE
+    color: #4361EE;
 }
 
 /* Main Section Area */
-
-figure {
-    float: left;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 0px;
-    margin: 20px;
-    border: 3px solid #F72585
-}
-
-img {
-    width: 250px;
-}
 
 
 .courses article {
@@ -89,37 +45,14 @@ figcaption {
 }
 
 
-#homecontent, #help {
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-#help {
-    font-weight: 800;
-}
-
 h3 {
     font-family: 'lexend', 'cursive';
-    font-weight: normal
+    font-weight: normal;
 }
 
-#expert {
-    color: #F72585;
-    font-weight: 800;
-}
 
 h2 {
     font-family: "Silkscreen", sans-serif;
-    font-weight: 700;
+    font-weight: 735;
     font-style: normal;
-}
-
-.contact {
-    padding-top: 30px
-}
-
-footer {
-    font-size: 80%;
-    padding: 7px 0px 0px 20px;
 }
