@@ -1,72 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>7th Pixel Consulting</title>
-    <link rel="stylesheet" href="faq.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Frequently Asked Questions - 7th Pixel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-
+/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.collapsible').collapsible();
+        });
+
+    </script>
+    <style>
+        footer a {
+            text-decoration: underline;
+        }
+
+        .brand-logo {
+            margin-left: 10px;
+        }
+
+        .parallax img {
+            width: 100%;
+            height: 20vh
+        }
+
+        img.activator {
+            height: 200px;
+        }
+
+        body {
+            font-family: Lexend, Times, sans-serif;
+            line-height: 1.4em;
+        }
+
+        h2 {
+            font-family: "Silkscreen", sans-serif;
+            font-weight: 735;
+            font-style: normal;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4361EE;
+        }
+
+        ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="faqwrapper">
-
-        <header>
-            <img src="images/7thPixelLogocopy.png" alt="7th logo image" id=logo>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="info.html">Info</a></li>
-                    <li><a href="faq.html" class="current">FAQ</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-wrapper indigo darken-1">
+                <a href="#!" class="brand-logo yellow-text  text-darken-3" style="font-family: Silkscreen; font-size: 1.30rem;">7th Pixel Consulting</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" style="font-family: Silkscreen;" class="right hide-on-med-and-down">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Info</a></li>
+                    <li class="active"><a href="faq.html">FAQ</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
                 </ul>
-            </nav>
-        </header>
-        <!-- Information Blurb -->
-        <section class="mainfaq">
-
-            <h2 id="faqheader">Frequently Asked Questions</h2>
-
-            <div class="faqcontent">
-                <h3 class="question">Q: How did you determine the top 3 video games of each year from 2022-2024?</h3>
-                <h4 class="answer">A:  The top 3 video games of each year are determined by a combination of critical acclaim, player reviews, and popularity. Our team reviews the top choices and meets to decide our final top 3. </h4>
-                <h3 class="question">Q: Can I suggest a game that I think should be on the list?</h3>
-                <h4 class="answer">A: Yes, please visit our <a id="redirect" href="contact.html">Contact Us page</a> and share your suggestions for games you think should be on our yearly list.</h4>
-                <h3 class="question">Q: Where can I play the games listed on the website?</h3>
-                <h4 class="answer">A: Under each game's description, you’ll find the platforms where each game is available.</h4>
-                <h3 class="question">Q: Are these games available worldwide?</h3>
-                <h4 class="answer">A: Most games listed on our website are available worldwide. However due to regional restrictions, some games may not be available in certain countries. Check the games storefront for more details on availability</h4>
-                <h3 class="question">Q: Will you update this list in the future?</h3>
-                <h4 class="answer">A: Yes, our plan is to update this page yearly with our top games. Keep an eye out for updates in 2025!</h4>
+            </div>
+        </nav>
+        <ul class="sidenav" style="font-family: Silkscreen;" id="mobile-demo">
+            <li><a href="">Home</a></li>
+            <li><a href="">Info</a></li>
+            <li class="active"><a href="">FAQ</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+        <!--Header Section-->
+        <div class="parallax-container  valign-wrapper">
+            <div class="parallax"><img src="images/headergraphic.jpg" width="400px"></div>
+            <div class="container">
+                <div class="row box indigo darken-1">
+                    <div class="col l12 m12 s12 white-text center-align">
+                        <h2 class="white-text">Frequently Asked Questions</h2>
+                    </div>
+                </div>
 
             </div>
-                 </section>
-                <!-- sidebar section -->
-                <aside>
-                    <article class="resources">
-                        <h2 class="asideheader">Critic Websites</h2>
-                        <a href="https://www.metacritic.com/">Metacritic</a>
-                        <a href="https://www.ign.com/">IGN</a>
-                        <a href="https://opencritic.com/">Opencritic</a>
+        </div>
 
-                        <article>
-                            <h2 class="asideheader">How to Install PC Games</h2>
-                            <a class="faqlinks" href="https://store.steampowered.com/">Steam</a>
-                            <iframe id="faqvid" width="240" height="180" src="https://www.youtube.com/embed/ulyicVW6NkQ?si=LUiZQmiXv5NKdEBh">
-                            </iframe>
-                            <a class="faqlinks" href="https://store.epicgames.com/en-US/">Epic Games Store</a>
-                        </article><iframe id="faqvid" width="240" height="180" src="https://www.youtube.com/embed/FdOq3jder68?si=D4Hime6lm8OoxYmI">
-                        </iframe>
+        <!-- FAQ section -->
+        <div class="container">
+            <div class="row">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>How did you determine the top 3 video games of each year from 2022-2024?</div>
+                        <div class="collapsible-body"><span>The top 3 video games of each year are determined by a combination of critical acclaim, player reviews, and popularity. Our team reviews the top choices and meets to decide our final top 3.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>Can I suggest a game that I think should be on the list?</div>
+                        <div class="collapsible-body"><span>Yes, please visit our <a id="redirect" href="contact.html">Contact Us page</a> and share your suggestions for games you think should be on our yearly list.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>Where can I play the games listed on the website?</div>
+                        <div class="collapsible-body"><span>Under each game's description, you’ll find the platforms where each game is available.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>Are these games available worldwide?</div>
+                        <div class="collapsible-body"><span>Most games listed on our website are available worldwide. However due to regional restrictions, some games may not be available in certain countries. Check the games storefront for more details on availability.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>Will you update this list in the future?</div>
+                        <div class="collapsible-body"><span>Yes, our plan is to update this page yearly with our top games. Keep an eye out for updates in 2025!</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Critic Section -->
+
+        <div class="container">
+            <div class="row">
+                <h3 class="section-header center">Critic Websites</h3>
+            </div>
+            <div class="row">
+                <!-- first card -->
+
+                <div class="col l4 m4 s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/metacriticlogo.png">
+
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Metacritic</span>
+                            <p>Metacritic is a website dedicated to taking reviews from established video game publications, and combining them into one score.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.metacritic.com/">Their Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--second card -->
+
+                <div class="col l4 m4 s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/ignlogo.png">
+
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">IGN</span>
+                            <p>IGN is a well-renowned video game publication that provides in depth reviews on many video games every year.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.ign.com/">Their Website</a>
+                        </div>
+                    </div>
+                </div>
 
 
-                    </article>
-                    
-                </aside>
-                <footer>
-                    &copy; 2024 7th Pixel
-            </footer>  
-      
+                <!-- third card -->
+
+                <div class="col l4 m4 s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/opencriticlogo.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Opencritic</span>
+                            <p>Opencritic is similar to Metacritic, but contains reviews from smaller publications and players that they take into account for their scores.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://opencritic.com/">Their Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installing Section -->
+        <div class="container">
+            <div class="row">
+                <h3 class="section-header center">How to Install PC Games</h3>
+            </div>
+            <div class="row">
+                <div class="col s6 m6">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/FdOq3jder68?si=S1-WoVPvHpHc20ng" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col s6 m6">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/ulyicVW6NkQ?si=VHeQbyYtywqVWVEH" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer indigo darken-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h6><a class="white-text" href="#top">Back to top</a></h6>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Connect With Us</h5>
+                        <p class="grey-text text-lighten-4">
+                            Join our community on social media to keep up with the latest news, updates, and exclusive
+                            content!
+                        </p>
+                        <ul>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="https://miamioh.edu/cca/departments/emerging-technology-in-business-and-design/index.html">ETBD</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="https://x.com/MiamiOH_ETBD">Twitter</a></li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="https://www.instagram.com/miamioh_etbd/">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2024 7th Pixel Consulting, All Rights Reserved
+                    <a class="grey-text text-lighten-4 right" href="#!"><img src="images/7thPixelLogocopy.png" width="30px" /></a>
+                </div>
+            </div>
+        </footer>
     </div>
+
 </body>
 
 </html>
