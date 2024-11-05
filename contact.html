@@ -3,79 +3,141 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>7th Pixel Consulting</title>
-    <link rel="stylesheet" href="contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <title>ContactUs</title>
 </head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- Google Icon Font -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="index.css" />
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+    $(document).ready(function() {
+            $('.sidenav').sidenav();
+        }
+
+    );
+
+</style>
 
 <body>
-    <div class="wrapper">
+    <a id="top"></a>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
-        <header>
-            <img src="images/7thPixelLogocopy.png" alt="7th logo image" id=logo>
-            <nav>
-                <ul>
+    <!--Navbar-->
+    <nav>
+
+        <div class="nav-wrapper #3f51b5 indigo darken-1">
+            <div class="container">
+                <a href="#!" class="brand-logo yellow-text  text-darken-3">7th Pixel Consulting</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="info.html">Info</a></li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="current">Contact Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-            </nav>
-        </header>
-<article>
-	<h2>Contact Us</h2>
-	<p>Ready to take your gaming projects to the next level? At 7th Pixel, we’re excited to collaborate and help you navigate the dynamic world of gaming. Whether you have questions, need insights, or want to discuss potential partnerships, we’re here for you!
-
-Reach out to our team for personalized consulting services that can transform your ideas into reality. Fill out the contact form including your email, and let’s start a conversation. 
-</p>
-</article>
-
-        <!-- Contact Fill Out -->
-        <section class="contact">
-            <fieldset>
-                <label for="firstname">First Name</label>
-                <input type="firstname" name="firstname" id="firstname" required><br>
-                <label for="lastname">Last Name</label>
-                <input type="lastname" name="lastname" id="lastname" required><br>
-                <label for="email">E-Mail:</label>
-                <input for="email" name="email" id="email" required><br>
-                <label for="phone">Phone Number:</label>
-                <input for="phone" name="phone" id="phone" placeholder="999-999-9999"><br>
-                <label for="hearaboutus">How did you hear about us?</label>
-                <select name="hearaboutus" id="hearaboutus" required>
-                    <option value="magazine">Magazine Ad</option>
-                    <option value="Radio">Radio Ad</option>
-                    <option value="tv">TV Ad</option>
-                    <option value="word">Social Media</option>
-                </select>
-                <br><label for="questions" class="optional">Questions/Comments:</label><br>
-                <textarea name="questions" id="questions" rows="6"></textarea>
-                <label>&nbsp;</label>
-                <br><input type="submit" id="submit" value="Submit">
-            </fieldset>
+            </div>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="">Home</a></li>
+        <li><a href="">Info</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">About US</a></li>
+        <li><a href="active">Contact</a></li>
+    </ul>
+    <!--Form-->
+    <section class="float center">
+        <div>
+            <h3 id="header1" class=pink-text text-accent-3>Contact Us</h3>
+        </div>
+        <section class="float center">
+            <div class="row">
+                <form>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s8">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s8">
+                            <i class="material-icons prefix">chat</i>
+                            <input id="message" type="text" class="validate">
+                            <label for="Message">Message</label>
+                        </div>
+                    </div>
+                    <form action="https://formsubmit.co/mackenzie.hoye@gmail.com" method="POST">
+                        <button type="submit" value="Submit" class="pink btn-large">Submit</button>
+                    </form>
+                </form>
+            </div>
         </section>
-        
-        <aside>
-            <article class="Location">
-                <h2>Our Location</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.0789668591074!2d-84.73666685978007!3d39.511445310358624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403d78f83f6be5%3A0x38a0e4c65bce2a81!2sMcVey%20Data%20Science%20Building!5e1!3m2!1sen!2sus!4v1727969078552!5m2!1sen!2sus" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
-            <article class="contact">
-                <h2>Contact</h2>
-                <p>Mcvey Data Science<br />
-                    Miami University<br />
-                    Oxford, OH<br />
-                </p>
-            </article>
-            
-        </aside>
+    </section>
 
-        <!--footer -->
-        <footer>
-            &copy; 2024 7th Pixel
-        </footer>
-    </div>
+    <section id="location" class="float center">
+        <div class="row">
+            <div class="float center">
+                <p>Loacted at Miami University's Mcvey Data Secience building at 105 Tallawanda Road, Oxford Ohio. </p>
+            </div>
+        </div>
+        <article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.0789668591074!2d-84.73666685978007!3d39.511445310358624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403d78f83f6be5%3A0x38a0e4c65bce2a81!2sMcVey%20Data%20Science%20Building!5e1!3m2!1sen!2sus!4v1727969078552!5m2!1sen!2sus" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+        <div class="row">
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="page-footer #3f51b5 indigo darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6><a class="white-text" href="#top">Back to top</a></h6>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Connect With Us</h5>
+                    <p class="grey-text text-lighten-4">Join our community on social media to keep up with the latest news, updates, and exclusive content!</p>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://miamioh.edu/cca/departments/emerging-technology-in-business-and-design/index.html">ETBD</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://x.com/MiamiOH_ETBD">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/miamioh_etbd/">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2024 7th Pixel Consulting, All Rights Reserved
+                <a class="grey-text text-lighten-4 right" href="#!"><img src="images/7thPixelLogo.png" width="30px"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
