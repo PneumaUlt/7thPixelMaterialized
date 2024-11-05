@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Icon Font -->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
     <!-- jQuery CDN -->
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -28,7 +28,10 @@
     footer a {
         text-decoration: underline;
     }
-
+    ul li {
+        display: inline;
+        margin-right: 30px;
+        }
     </style>
     
     <!-- Compiled and minified JavaScript -->
@@ -53,30 +56,35 @@ $(document).ready(function(){
 <body>
     <!-- Navigation section -->
 <nav>
+            <div class="nav-wrapper #3f51b5 indigo darken-1">
+                <div class="container">
+                    <a
+                        href="#!"
+                        class="brand-logo yellow-text text-darken-3"
+                        style="font-family: Silkscreen; font-size: 1.30rem;"
+                        >7th Pixel Consulting</a
+                    >
+                    <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
+                        ><i class="material-icons">menu</i></a
+                    >
+                    <ul style="font-family: Silkscreen;" class="right hide-on-med-and-down">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <div class="nav-wrapper #3f51b5 indigo darken-1
-">
-<div class="container">
-      <a href="#!" class="brand-logo yellow-text  text-darken-3">7th Pixel Consulting</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">Info</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li class="active"><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-    </div>
-  </nav>
-
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">Info</a></li>
-        <li ><a href="faq.html">FAQ</a></li>
-        <li class="active"><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-  </ul>
+        <ul style="font-family: Silkscreen;" class="sidenav" id="mobile-demo">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
 
     <!-- About Us section -->
 <ul class="collection">
